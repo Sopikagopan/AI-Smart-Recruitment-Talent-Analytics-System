@@ -1,0 +1,21 @@
+{
+    "model_type": "LSTM",
+    "experiment_name": "Smart_Recruitment_LSTM",
+    "selected_run_id": "ee3711f74b4b4e70ae437d7de0202f70",
+    "selected_max_epochs": 5,
+    "best_validation_f1": 1.0,
+    "test_accuracy": 1.0,
+    "test_precision": 1.0,
+    "test_recall": 1.0,
+    "test_f1": 1.0,
+    "text_column": "combined_text",
+    "numeric_columns": [
+        "candidate_experience_years",
+        "job_required_experience",
+        "experience_gap"
+    ],
+    "target_column": "match_label",
+    "threshold": 0.5,
+    "max_tokens": 10000,
+    "sequence_length": 150
+}

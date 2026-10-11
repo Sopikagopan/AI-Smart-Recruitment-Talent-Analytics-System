@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/ddd/OneDrive/Desktop/AI-Smart Recruitment & Talent
+  Alanytics System/mlruns/1/models/m-ab4d057167e947b39020a6d5ae172758/artifacts
+flavors:
+  python_function:
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.tensorflow
+    python_version: 3.11.17
+  tensorflow:
+    code: null
+    data: data
+    keras_version: 2.21.0
+    model_type: keras
+    save_format: tf
+mlflow_version: 3.17.0
+model_id: m-ab4d057167e947b39020a6d5ae172758
+model_size_bytes: 8152981
+model_uuid: m-ab4d057167e947b39020a6d5ae172758
+prompts: null
+run_id: cb9c21e9fa3745f28792626465382c89
+utc_time_created: '2026-10-10 19:48:46.811492'
