@@ -89,7 +89,7 @@ if missing_columns:
     )
 
 df = df[required_columns].copy()
-
+ 
 df = df.dropna(subset=required_columns).reset_index(drop=True)
 
 df[TEXT_COL] = df[TEXT_COL].astype(str)
@@ -147,7 +147,7 @@ X_train_num = scaler.fit_transform(
 ).astype(np.float32)
 
 X_val_num = scaler.transform(
-    val_df[NUMERIC_COLS]
+    val_df[NUMERIC_COLS] 
 ).astype(np.float32)
 
 X_test_num = scaler.transform(
@@ -480,6 +480,11 @@ test_recall = recall_score(
 test_f1 = f1_score(
     y_test, test_predictions, zero_division=0
 )
+
+mlflow.log_metric("test_accuracy", test_accuracy)
+mlflow.log_metric("test_precision", test_precision)
+mlflow.log_metric("test_recall", test_recall)
+mlflow.log_metric("test_f1", test_f1)
 
 print("\nFINAL TEST METRICS")
 print(f"Accuracy : {test_accuracy:.4f}")
